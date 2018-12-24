@@ -1,0 +1,2 @@
+export const RECEIVED_CARD = 'RECEIVED_CARD';
+export const RECEIVED_CARDS = 'RECEIVED_CARDS';
