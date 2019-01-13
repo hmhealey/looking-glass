@@ -1,5 +1,5 @@
 import React from 'react';
-import {Provider} from 'react-redux';
+import {ManagedProvider} from 'react-redux-manager';
 import {
     BrowserRouter,
     Route,
@@ -20,7 +20,7 @@ export default class Root extends React.PureComponent {
     render() {
         return (
             <BrowserRouter>
-                <Provider store={this.store}>
+                <ManagedProvider store={this.store}>
                     <h1>Root</h1>
                     <Switch>
                     <Route path={'/card/:set/:cardName'} component={CardPage}/>
@@ -28,7 +28,7 @@ export default class Root extends React.PureComponent {
                         <div>{'This is the true root'}</div>
                     )}/>
                     </Switch>
-                </Provider>
+                </ManagedProvider>
             </BrowserRouter>
         );
     }
