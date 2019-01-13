@@ -5,6 +5,8 @@
   "repository": "https://github.com/hmhealey/looking-glass",
   "author": "hmhealey",
   "dependencies": {
+    "react": "^16.7.0",
+    "react-redux": "^6.0.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0",
     "reselect": "^3.0.1"
@@ -15,12 +17,21 @@
     "@babel/plugin-transform-async-to-generator": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
     "babel-plugin-module-resolver": "^3.1.1",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "copy-webpack-plugin": "^4.6.0",
+    "mocha": "^5.2.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --watch",
     "test": "mocha --require @babel/register src/**/*.test.js"
   }
 }
