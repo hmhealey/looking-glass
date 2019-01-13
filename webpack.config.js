@@ -3,12 +3,15 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true
+  },
   entry: './web/index.js',
   mode: 'development',
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
@@ -31,6 +34,6 @@ module.exports = {
       'node_modules',
       path.resolve(__dirname, 'web'),
       path.resolve(__dirname, 'src')
-    ],
+    ]
   }
 };
