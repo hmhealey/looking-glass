@@ -29,6 +29,19 @@ export function getCardByName(name) {
     };
 }
 
+export function getCardById(id) {
+    return async (dispatch, getState) => {
+        const client = getClient(getState());
+        const response = await client.getCardById(id);
+
+        if (response.data) {
+            dispatch(receivedCard(response.data));
+        }
+
+        return response;
+    };
+}
+
 export function getCardsByName(names) {
     return async (dispatch, getState) => {
         const cards = [];

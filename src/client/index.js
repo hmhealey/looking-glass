@@ -41,6 +41,11 @@ export class Client {
         return this.fetch(url);
     }
 
+    getCardById(id) {
+        const url = `/cards/${id}`;
+        return this.fetch(url);
+    }
+
     getCardByName(name, options) {
         let url = '/cards/named';
 
