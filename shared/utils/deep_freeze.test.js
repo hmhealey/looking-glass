@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import {deepFreeze} from 'utils/deep_freeze';
+import {deepFreeze} from 'shared/utils/deep_freeze';
 
 describe('deepFreeze', () => {
     it('prevents mutation of array', () => {

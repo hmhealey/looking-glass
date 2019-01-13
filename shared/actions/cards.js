@@ -1,6 +1,5 @@
-import * as ActionTypes from 'constants/action_types';
-
-import {getClient} from 'selectors/client';
+import * as ActionTypes from 'shared/constants/action_types';
+import {getClient} from 'shared/selectors/client';
 
 export function receivedCard(card) {
 	return {

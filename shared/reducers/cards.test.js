@@ -1,10 +1,8 @@
 import {expect} from 'chai';
 
-import * as ActionCreators from 'action_creators/cards';
-
-import * as Reducers from 'reducers/cards';
-
-import {deepFreeze} from 'utils/deep_freeze';
+import * as ActionCreators from 'shared/actions/cards';
+import * as Reducers from 'shared/reducers/cards';
+import {deepFreeze} from 'shared/utils/deep_freeze';
 
 describe('byId', () => {
     describe('receivedCard', () => {

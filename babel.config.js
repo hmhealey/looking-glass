@@ -8,7 +8,7 @@ module.exports = function(api) {
 
     const plugins = [
         '@babel/plugin-transform-async-to-generator',
-        ['module-resolver', {root: ['./src', './node_modules']}],
+        ['module-resolver', {root: ['.', './node_modules']}],
         ['@babel/plugin-proposal-class-properties', {loose: false}],
     ];
     
