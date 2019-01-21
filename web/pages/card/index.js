@@ -1,4 +1,4 @@
-import {manage} from 'react-redux-manager';
+import {manage} from 'react-redux-managed';
 import {createSelector} from 'reselect';
 
 import {getCardByName} from 'shared/actions/cards';

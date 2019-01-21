@@ -1,5 +1,5 @@
 import React from 'react';
-import {ManagedProvider} from 'react-redux-manager';
+import {ManagedProvider} from 'react-redux-managed';
 import {
     BrowserRouter,
     Route,
